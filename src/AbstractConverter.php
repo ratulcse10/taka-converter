@@ -1,5 +1,5 @@
 <?php
-namespace Kalam\TakaConverter;
+namespace Ratul\TakaConverter;
 abstract class AbstractConverter {
     const CRORE     = 8;
     const LAC       = 6;
