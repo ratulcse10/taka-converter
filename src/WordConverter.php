@@ -20,7 +20,7 @@ class WordConverter extends AbstractConverter {
             $chunkAmount = substr($amount, 0, $chunkLength );
             $amount = substr($amount, $chunkLength) ;
             if( $chunkAmount > 0 ) {
-                $word .= $this->taka[$chunkAmount * 1]  . ' lac ';
+                $word .= $this->taka[$chunkAmount * 1]  . ' লক্ষ ';
             }
 
         }
@@ -31,7 +31,7 @@ class WordConverter extends AbstractConverter {
             $chunkAmount = substr($amount, 0, $chunkLength );
             $amount = substr($amount, $chunkLength) ;
             if( $chunkAmount > 0 ) {
-                $word .= $this->taka[$chunkAmount * 1] . ' thousand ';
+                $word .= $this->taka[$chunkAmount * 1] . ' হাজার ';
             }
         }
 
@@ -41,7 +41,7 @@ class WordConverter extends AbstractConverter {
             $chunkAmount = substr($amount, 0, $chunkLength );
             $amount = substr($amount, $chunkLength) ;
             if( $chunkAmount > 0 ) {
-                $word .= $this->taka[$chunkAmount * 1] . ' hundred ';
+                $word .= $this->taka[$chunkAmount * 1] . ' শত ';
             }
         }
 
@@ -62,16 +62,16 @@ class WordConverter extends AbstractConverter {
             $chunkLength = (strlen($amount) - ( self::CRORE - 1));
             $chunkAmount = substr($amount, 0, $chunkLength);
             $amount = substr($amount, $chunkLength) ;
-            $word .= $this->convertUpToLac($chunkAmount)  . ' crore ';
+            $word .= $this->convertUpToLac($chunkAmount)  . ' কোটি ';
         }
 
         $word .= $this->convertUpToLac($amount);
 
         if( isset($splitAmounts[1]) ) {
-            $word .= ' and ' . $this->taka[ $splitAmounts[1]] . ' poisa';
+            $word .= ' and ' . $this->taka[ $splitAmounts[1]] . ' পয়সা';
         }
         
-        $word .= ' only';
+        $word .= ' মাত্র';
 
         return ucwords($word) ;
     }
