@@ -1,12 +1,12 @@
 {
-  "name": "kalam/taka-converter",
-  "description": "Convert Taka amount to word or word to numeric",
+  "name": "ratulcse10/taka-converter",
+  "description": "Convert Taka amount to Bangla Word",
   "license": "MIT",
   "keywords": ["Taka", "Taka conversion"],  
   "authors": [
     {
-      "name":"Kausar Alam",
-      "email":"alam.iiuc@gmail.com",
+      "name":"Abu Shahriar Ratul",
+      "email":"ratulcse10@gmail.com",
       "role":"Developer"
     }
   ],
@@ -18,7 +18,7 @@
   },  
   "autoload": {
     "psr-4": {
-      "Kalam\\TakaConverter\\":"src"
+      "Ratul\\TakaConverter\\":"src"
     }
   },
   "extra" : {
