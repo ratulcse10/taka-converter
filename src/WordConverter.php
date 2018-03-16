@@ -1,6 +1,6 @@
 <?php
 
-namespace Kalam\TakaConverter;
+namespace Ratul\TakaConverter;
 
 
 class WordConverter extends AbstractConverter {
