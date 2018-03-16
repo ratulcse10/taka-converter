@@ -2,7 +2,7 @@
   "name": "ratulcse10/taka-converter",
   "description": "Convert Taka amount to Bangla Word",
   "license": "MIT",
-  "keywords": ["Taka", "Taka conversion"],  
+  "keywords": ["Taka", "Taka conversion", "English to Bangla Taka Word"],  
   "authors": [
     {
       "name":"Abu Shahriar Ratul",
