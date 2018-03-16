@@ -1,11 +1,11 @@
 # taka-converter
 
-Covert numeric taka to word.
+Covert numeric taka to Bangla Word.
 
 ## Installation
 
 ```
-composer require kalam/taka-converter dev-master
+composer require ratulcse10/taka-converter dev-master
 ```
 ## Example
 ```
@@ -13,42 +13,8 @@ composer require kalam/taka-converter dev-master
 
 include('vendor/autoload.php');
 
-echo (new Kalam\TakaConverter\TakaConverter(101))->convert(); 
-// One Hundred One Only
+echo (new Ratul\TakaConverter\TakaConverter(152465))->convert();
+// এক লক্ষ বায়ান্ন হাজার চার শত পঁয়ষট্টি মাত্র
 
-echo (new Kalam\TakaConverter\TakaConverter(1000))->convert(); 
-// One Thousand  Only
-
-echo (new Kalam\TakaConverter\TakaConverter(120350))->convert();
-// One Lac Twenty Thousand Three Hundred Fifty Only
-
-echo (new Kalam\TakaConverter\TakaConverter(12109530))->convert(); 
-// One Crore Twenty One Lac Nine Thousand Five Hundred Thirty Only
-
-echo (new Kalam\TakaConverter\TakaConverter(10021095.959))->convert(); 
-// One Crore Twenty One Thousand Ninety Five And Ninety Six Poisa Only
-
-?>
-```
-Or
-
-```
-<?php
-include('vendor/autoload.php');
-
-echo (new Kalam\TakaConverter\WordConverter(101))->convert(); 
-// One Hundred One Only
-
-echo (new Kalam\TakaConverter\WordConverter(1000))->convert(); 
-// One Thousand  Only
-
-echo (new Kalam\TakaConverter\WordConverter(120350))->convert(); 
-// One Lac Twenty Thousand Three Hundred Fifty Only
-
-echo (new Kalam\TakaConverter\WordConverter(12109530))->convert(); 
-// One Crore Twenty One Lac Nine Thousand Five Hundred Thirty Only
-
-echo (new Kalam\TakaConverter\WordConverter(10021095.959))->convert(); 
-// One Crore Twenty One Thousand Ninety Five And Ninety Six Poisa Only
 ?>
 ```
